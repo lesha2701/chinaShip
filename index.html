@@ -14,13 +14,10 @@
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="images/preview.jpg">
 
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
-
-	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
 
 	<script src="js/common.js" defer></script>
 
@@ -42,7 +39,7 @@
 					<div class="header__contact">
 						<ul class="header__contact-list">
 							<li class="header__contact-item">
-								<a class="header__contact-link link" href="mailto:info@g-wall.ru">
+								<a class="header__contact-link link-email" href="mailto:info@g-wall.ru">
 									info@g-wall.ru
 								</a>
 							</li>
@@ -52,9 +49,9 @@
 								</a>
 							</li>
 						</ul>
-						<button type="button" class="button header__contact-button">
+						<!-- <button type="button" class="button header__contact-button">
 							Получить расчет
-						</button>
+						</button> -->
 					</div>
 				</div>
 				<div class="header__menu">
@@ -78,18 +75,79 @@
 				</div>
 			</div>
 			<div class="header__hero">
-				<h1 class="header__hero-title">
-					Доставка <span>“под ключ”</span><br> из Китая от 1 кг и от 3 дней
-				</h1>
-				<p class="header__hero-text">
-					Работаем с юр.лицами: ИП УСН и ООО НДС<br>Поиск производителей / хранение товара на складе / Удобная оплата без лишних комиссий 
-				</p>
-				<button type="button" class=" button header__hero-button">
-					Бесплатный расчет
-				</button>
+				<div class="header__hero-block">
+					<h1 class="header__hero-title">
+						Доставка <span>“под ключ”</span><br> из Китая от 1 кг и от 3 дней
+					</h1>
+					<p class="header__hero-text">
+						Работаем с юр.лицами: ИП УСН и ООО НДС<br>Поиск производителей / хранение товара на складе / Удобная оплата без лишних комиссий 
+					</p>
+					<button type="button" class="button" id="open-modal-btn">
+						Получить расчет
+					</button>
+
+				</div>
+				<div class="header__hero-form-block">
+					<h3 class="header__hero-form-title">
+						ПОЛУЧИТЕ РАСЧЕТ ЗА 10 МИНУТ
+					</h3>
+					<form class="header__hero-form">
+						<div class="header__hero-form-name">
+							<label class="header__hero-form-label" for="name">
+								<img class="header__hero-form-icon" src="./images/form/person.svg" alt="">
+							</label>
+							<input type="text" class="header__hero-form-input" id="name" placeholder="Введите ваше имя">
+						</div>
+						<div class="header__hero-form-name">
+							<label class="header__hero-form-label" for="name">
+								<img class="header__hero-form-icon" src="./images/form/email.svg" alt="">
+							</label>
+							<input type="email" class="header__hero-form-input" id="email" placeholder="Введение ваш email">
+						</div>
+						<div class="header__hero-form-name">
+							<label class="header__hero-form-label" for="name">
+								<img class="header__hero-form-icon" src="./images/form/phone.svg" alt="">
+							</label>
+							<input type="phone" class="header__hero-form-input" id="phone" placeholder="Введение ваш телефон">
+						</div>
+						<textarea class="header__hero-form-textarea" name="text" id="city" placeholder="Укажите город отправки и доставки. Опишите груз и укажите его вес"></textarea>
+						<button type="submit" class="button header__hero-form-button">
+							Получить расчет
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</header>
+
+	<div class="modal" id="my-modal">
+        <div class="modal__box">
+            <button class="modal__close-btn" id="close-my-modal-btn">
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                        fill="#333333" />
+                    <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+                </svg>
+            </button>
+			<div class="modal__block">
+				<h2 class="modal__title">Оставьте <span>заявку</span></h2>
+
+				<p class="modal__text">Мы свяжемся с вами в течении 30 минут!</p>
+	
+				<form action="#" class="modal__form">
+					<input class="modal__form-input" type="text" placeholder="Ваше имя">
+					<input class="modal__form-input" type="email" placeholder="Ваш email">
+					<input class="modal__form-input" type="phone" placeholder="Ваш телефон">
+					<button class="button modal__form-button" type="submit">Заказать в 1 клик</button>
+				</form>
+				<div class="modal__block-privacy">
+					<img class="modal__block-privacy-img" src="./images/lock.svg" alt="">
+					<p class="modal__text-privacy">Ваши данные не будут переданы третьим лицам</p>
+				</div>
+			
+			</div>
+        </div>
+    </div>
 	
 	<main class="main">
 		<section class="delivery" id="delivery">
@@ -101,7 +159,7 @@
 					<ul class="delivery__list">
 						<li class="delivery__item">
 							<div class="delivery__item-img">
-								<img src="./images/logic/20946037.png" alt="card">
+								<img src="./images/logic/ship.png" alt="card">
 							</div>
 							<h3 class="delivery__item-title">
 								доставка морем
@@ -112,13 +170,13 @@
 							<p class="delivery__item-price">
 								(от 0.4$/кг)
 							</p>
-							<button type="button" class="button delivery__item-button">
+							<button type="button" class="button delivery__item-button" id="open-modal-btn1">
 								Заказать
 							</button>
 						</li>
 						<li class="delivery__item">
 							<div class="delivery__item-img">
-								<img src="./images/logic/20946037.png" alt="card">
+								<img src="./images/logic/car_fast.png" alt="card">
 							</div>
 							<h3 class="delivery__item-title">
 								быстрое авто
@@ -129,13 +187,13 @@
 							<p class="delivery__item-price">
 								(от 2$/кг)
 							</p>
-							<button type="button" class="button delivery__item-button">
+							<button type="button" class="button delivery__item-button"  id="open-modal-btn2">
 								Заказать
 							</button>
 						</li>
 						<li class="delivery__item">
 							<div class="delivery__item-img">
-								<img src="./images/logic/20946037.png" alt="card">
+								<img src="./images/logic/car.png" alt="card">
 							</div>
 							<h3 class="delivery__item-title">
 								авто доставка
@@ -146,13 +204,13 @@
 							<p class="delivery__item-price">
 								(от 1$/кг)
 							</p>
-							<button type="button" class="button delivery__item-button">
+							<button type="button" class="button delivery__item-button" id="open-modal-btn3">
 								Заказать
 							</button>
 						</li>
 						<li class="delivery__item">
 							<div class="delivery__item-img">
-								<img src="./images/logic/20946037.png" alt="card">
+								<img src="./images/logic/train.png" alt="card">
 							</div>
 							<h3 class="delivery__item-title">
 								жд доставка
@@ -163,13 +221,13 @@
 							<p class="delivery__item-price">
 								(от 0.5$/кг)
 							</p>
-							<button type="button" class="button delivery__item-button">
+							<button type="button" class="button delivery__item-button" id="open-modal-btn4">
 								Заказать
 							</button>
 						</li>
 						<li class="delivery__item">
 							<div class="delivery__item-img">
-								<img src="./images/logic/20946037.png" alt="card">
+								<img src="./images/logic/plane.png" alt="card">
 							</div>
 							<h3 class="delivery__item-title">
 								авиа доставка
@@ -180,7 +238,7 @@
 							<p class="delivery__item-price">
 								(от 5$/кг)
 							</p>
-							<button type="button" class="button delivery__item-button">
+							<button type="button" class="button delivery__item-button" id="open-modal-btn5">
 								Заказать
 							</button>
 						</li>
@@ -188,146 +246,7 @@
 				</div>
 			</div>
 		</section>
-<!-- 
-		<section class="calculator">
-			<div class="container">
-				<div class="calculator__inner">
-					<div class="caclulator__block-text">
-						<h2 class="calculator__title">
-							<span>Калькулятор</span> доставки груза из Китая в Россию
-						</h2>
-						<p class="calculator__text">
-							Рассчитайте примерную стоимость доставки и себестоимость товара в России
-						</p>
-					</div>
-					<div class="calculator__block-form">
-						<form class="calculator__form">
-							<div class="calculator__form-info">
-								<h3 class="calculator__form-title">
-									Укажите информацию о грузе
-								</h3>
-								<ul class="calculator__form-group">
-									<li class="calculator__form-item">
-										<label class="calculator__form-label" for="weight">
-											Вес груза, кг
-										</label>
-										<div class="calculator__form-block">
-											<div class="calculator__form-btn">-</div>
-											<input type="text" class="calculator__form-input" id="weight" value="1.0">
-											<div class="calculator__form-btn">+</div>
-										</div>
-										
-									</li>
-									<li class="calculator__form-item">
-										<label class="calculator__form-label" for="volume">
-											Объем груза, м³
-										</label>
-										<div class="calculator__form-block">
-											<div class="calculator__form-btn">-</div>
-											<input type="text" class="calculator__form-input" id="volume" value="1.0">
-											<div class="calculator__form-btn">+</div>
-										</div>
-									</li>
-									<li class="calculator__form-item">
-										<label class="calculator__form-label" for="price">
-											Стоимость товара, ¥
-										</label>
-										<div class="calculator__form-block">
-											<div class="calculator__form-btn">-</div>
-											<input type="text" class="calculator__form-input" id="price"value="0">
-											<div class="calculator__form-btn">+</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="calculator__form-money">
-								<h3 class="calculator__form-title">
-									Каким способом хотите оплатить товар
-								</h3>
-								<ul class="calculator__form-items">
-									<li class="calculator__form-radio">
-										<input type="radio" name="payment" id="payment" value="payment" checked>
-										<label class="calculator__form-label" for="payment">
-											Наличными
-										</label>
-									</li>
-									<li class="calculator__form-radio">
-										<input type="radio" name="payment" id="bank" value="bank">
-										<label class="calculator__form-label" for="bank">
-											Банковской картой
-										</label>
-									</li>
-								</ul>
-							</div>
-							<button type="submit" class="button calculator__form-button">
-								Рассчитать
-							</button>
-						</form>
-					</div>
-					<div class="calculator__block__result">
-						<div class="calculator__result">
-							<h3 class="calculator__result-title">
-								Результат расчетов
-							</h3>
-							<ul class="calculator__result-list">
-								<li class="calculator__result-item">
-									<p class="calculator__result-text">ХАРАКТЕРИСТИКИ ТОВАРА</p>
-									<div class="calculator__result-block">
-										<div class="calculator__result-info">
-											<p>Вес брутто, кг</p>
-											<p>2.0 кг</p>
-										</div>
-										<div class="calculator__result-info">
-											<p>Объем, м3</p>
-											<p>2.0 м³</p>
-										</div>
-										<div class="calculator__result-info">
-											<p>Стоимость товара</p>
-											<div class="calculator__result-price">
-												<p>10¥</p>
-												<p>135₽</p>
-											</div>
-										</div>
-									</div>
-								</li>
 
-								<li class="calculator__result-item">
-									<p class="calculator__result-text">КОМИССИЯ ЗА ВЫКУП ТОВАРА</p>
-									<div class="calculator__result-block">
-										<div class="calculator__result-info">
-											<p>Комиссия</p>
-											<p>5%</p>
-										</div>
-										<div class="calculator__result-info">
-											<p>Расходы за безнал</p>
-											<p>16%</p>
-										</div>
-										<div class="calculator__result-info">
-											<p>ИТОГО СТОИМОСТЬ ТОВАРА</p>
-											<p>165 ₽</p>
-										</div>
-									</div>
-								</li>
-
-								<li class="calculator__result-item">
-									<p class="calculator__result-text">ДОСТАВКА И ТАМОЖЕННОЕ ОФОРМЛЕНИЕ</p>
-									<div class="calculator__result-block">
-										<div class="calculator__result-info">
-											<p>Тариф $ за кг</p>
-											<p>616 $</p>
-										</div>
-										<div class="calculator__result-info">
-											<p>ИТОГО СТОИМОСТЬ ДОСТАВКИ</p>
-											<p>139 499 ₽</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>					
-		</section> -->
 		<section class="about" id="about">
 			<div class="container">
 				<div class="about__inner">
@@ -346,122 +265,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="about__block">
-						<h2 class="about__title">
-							Наши преймущества
-						</h2>
-						<ul class="about__list">
-							<li class="about__item">
-								<img class="about__icon" src="./images/checkbox-svgrepo-com.svg" alt="">
-								<p class="about__text">
-									Большая база надежных поставщиков, с которыми мы работаем на постоянной основе в течение долгого периода, а также постоянный поиск новых
-								</p>
-							</li>
-							<li class="about__item">
-								<img class="about__icon" src="./images/checkbox-svgrepo-com.svg" alt="">
-								<p class="about__text">
-									“Свой” человек на таможне
-								</p>
-							</li>
-							<li class="about__item">
-								<img class="about__icon" src="./images/checkbox-svgrepo-com.svg" alt="">
-								<p class="about__text">
-									Проверенные пути доставки грузов от 3 до 60 дней из Китая в РФ
-								</p>
-							</li>
-							<li class="about__item">
-								<img class="about__icon" src="./images/checkbox-svgrepo-com.svg" alt="">
-								<p class="about__text">
-									Прозрачная финансовая и документальная часть (В РФ как физ. лицо, ИП УСН и ООО НДС)
-								</p>
-							</li>
-							<li class="about__item">
-								<img class="about__icon" src="./images/checkbox-svgrepo-com.svg" alt="">
-								<p class="about__text">
-									Быстрая оплаты поставщикам по выставленным инвойсам за 1-2 дня и в удобной им валюте: юани, доллары или евро
-								</p>
-							</li>
-						</ul>
-					</div>
-					<div class="about__block"> -->
-						<!-- <h2 class="about__title">
-							Наша команда
-						</h2>
-						<ul class="about__team-list">
-							<li class="about__team-item">
-								<div class="about__team-block">
-									<img src="./images/team/team1.png" alt="">
-									<p class="about__team-name">
-										Артур Моргачев
-									</p>
-									<p class="about__team-position">руководитель отдела продаж</p>
-								</div>
-							</li>
-							<li class="about__team-item">
-								<div class="about__team-block">
-									<img src="./images/team/team1.png" alt="">
-									<p class="about__team-name">
-										Артур Моргачев
-									</p>
-									<p class="about__team-position">руководитель отдела продаж</p>
-								</div>
-							</li>
-							<li class="about__team-item">
-								<div class="about__team-block">
-									<img src="./images/team/team1.png" alt="">
-									<p class="about__team-name">
-										Артур Моргачев
-									</p>
-									<p class="about__team-position">руководитель отдела продаж</p>
-								</div>
-							</li>
-							<li class="about__team-item">
-								<div class="about__team-block">
-									<img src="./images/team/team1.png" alt="">
-									<p class="about__team-name">
-										Артур Моргачев
-									</p>
-									<p class="about__team-position">руководитель отдела продаж</p>
-								</div>
-							</li>
-							<li class="about__team-item">
-								<div class="about__team-block">
-									<img src="./images/team/team1.png" alt="">
-									<p class="about__team-name">
-										Артур Моргачев
-									</p>
-									<p class="about__team-position">руководитель отдела продаж</p>
-								</div>
-							</li>
-							<li class="about__team-item">
-								<div class="about__team-block">
-									<img src="./images/team/team1.png" alt="">
-									<p class="about__team-name">
-										Артур Моргачев
-									</p>
-									<p class="about__team-position">руководитель отдела продаж</p>
-								</div>
-							</li>
-							<li class="about__team-item">
-								<div class="about__team-block">
-									<img src="./images/team/team1.png" alt="">
-									<p class="about__team-name">
-										Артур Моргачев
-									</p>
-									<p class="about__team-position">руководитель отдела продаж</p>
-								</div>
-							</li>
-							<li class="about__team-item">
-								<div class="about__team-block">
-									<img src="./images/team/team1.png" alt="">
-									<p class="about__team-name">
-										Артур Моргачев
-									</p>
-									<p class="about__team-position">руководитель отдела продаж</p>
-								</div>
-							</li>
-						</ul>
-					</div> -->
 				</div>
 			</div>
 		</section>
@@ -490,7 +293,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">2.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Сроки доставки от 3 до 50 дней 
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -501,7 +304,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">3.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Личный менеджер у каждого клинета 
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -657,6 +460,49 @@
 				</div>
 		</div>
 	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__block">
+					<p class="footer__logo">
+						China Shipp
+					</p>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item">
+							<a class="footer__menu-link link" href="#delivery">
+								варианты доставки
+							</a>
+						</li>
+						<li class="footer__menu-item">
+							<a class="footer__menu-link link" href="#about">
+								о компании
+							</a>
+						</li>
+						<li class="footer__menu-item">
+							<a class="footer__menu-link link" href="#advantages">
+								наши преимущества
+							</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<img class="footer__link-icon" src="./images/form/email.svg" alt="">
+						<a class="footer__link link-email" href="mailto:info@g-wall.ru">
+							info@g-wall.ru
+						</a>
+					</li>
+					<li class="footer__item">
+						<img class="footer__link-icon" src="./images/form/phone.svg" alt="">
+						<a class="footer__link link" href="tel:+7(800)775-21-38">
+							+7(800)775-21-38
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
