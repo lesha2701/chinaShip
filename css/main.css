@@ -397,15 +397,23 @@ body {
 }
 
 .about__img {
-	background-color: var(--accent);
-
 	height: 100%;
 }
 
 .about__image {
+	width: 300px;
+}
+
+.about__image-qua {
 	position: relative;
-	bottom: 15px;
-	right: 15px;
+	top: -110px;
+	left: 100px;
+}
+
+.about__image-tractor {
+	position: relative;
+	top: -80px;
+	left: 190px;
 }
 
 .about__title {
@@ -432,6 +440,11 @@ body {
 	font-size: 18px;
 }
 
+.about__textspan {
+	font-weight: 700;
+	color: #00ABE1;
+}
+
 .about__icon {
 	width: 50px;
 }
@@ -455,6 +468,75 @@ body {
 	margin: 0;
 }
 
-.about__team-position {
 
+
+.advantages {
+	background-image: url('../images/fon.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+
+	position: relative;
+}
+
+.advantages__inner {
+	padding: 50px 0;
+}
+
+.advantages__title {
+	color: #fff;
+	font-size: 56px;
+	margin-bottom: 50px;
+}
+
+.advantages__title span {
+	color: #00ABE1
+}
+
+.advantages__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.advantages__list-inner {
+	display: grid;
+	grid-template-columns: repeat(2, 400px);
+	gap: 20px;
+}
+
+.advantages__item-image {
+	width: 200px;
+	flex-wrap: nowrap;
+}
+
+.advantages__item {
+	display: flex;
+	color: #fff;
+
+	padding: 10px;
+	border: 1px solid #fff;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	border-radius: 6px;
+}
+
+.advantages__item-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.advantages__item-number {
+	opacity: 0.6;
+	font-size: 24px;
+}
+
+.mySwiper {
+	position: relative;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	position: absolute;
+	bottom: 0px; 
 }

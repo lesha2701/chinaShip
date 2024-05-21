@@ -24,6 +24,11 @@
 
 	<script src="js/common.js" defer></script>
 
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+
 </head>
 
 <body>
@@ -55,18 +60,18 @@
 				<div class="header__menu">
 					<ul class="header__menu-list">
 						<li class="header__menu-item">
-							<a href="#" class="header__menu-link link">
-								БЛОГ
+							<a href="#delivery" class="header__menu-link link">
+								ВАРИАНТЫ ДОСТАВКИ
 							</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#" class="header__menu-link link">
-								КАЛЬКУЛЯТОР ДОСТАВКИ
-							</a>
-						</li>
-						<li class="header__menu-item">
-							<a href="#" class="header__menu-link link">
+							<a href="#about" class="header__menu-link link">
 								О КОМПАНИИ
+							</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#advantages" class="header__menu-link link">
+								НАШИ ПРЕИМУЩЕСТВА
 							</a>
 						</li>
 					</ul>
@@ -77,7 +82,7 @@
 					Доставка <span>“под ключ”</span><br> из Китая от 1 кг и от 3 дней
 				</h1>
 				<p class="header__hero-text">
-					Работаем с юр.лицами: ИП УСН и ООО НДС<br>Оплата инвойсов в долларах и юанях за 1 день
+					Работаем с юр.лицами: ИП УСН и ООО НДС<br>Поиск производителей / хранение товара на складе / Удобная оплата без лишних комиссий 
 				</p>
 				<button type="button" class=" button header__hero-button">
 					Бесплатный расчет
@@ -87,7 +92,7 @@
 	</header>
 	
 	<main class="main">
-		<section class="delivery">
+		<section class="delivery" id="delivery">
 			<div class="container">
 				<div class="delivery__inner">
 					<h2 class="delivery__title">
@@ -122,7 +127,7 @@
 								13-15 дней
 							</p>
 							<p class="delivery__item-price">
-								(от 1$/кг)
+								(от 2$/кг)
 							</p>
 							<button type="button" class="button delivery__item-button">
 								Заказать
@@ -139,7 +144,7 @@
 								18-25 дней
 							</p>
 							<p class="delivery__item-price">
-								(от 0.7$/кг)
+								(от 1$/кг)
 							</p>
 							<button type="button" class="button delivery__item-button">
 								Заказать
@@ -180,27 +185,6 @@
 							</button>
 						</li>
 					</ul>	
-				</div>
-			</div>
-		</section>
-
-		<section class="experience">
-			<div class="container">
-				<div class="experience__inner">
-					<ul class="experience__list">
-						<li class="experience__item">
-							<p class="experience__item-number">20</p>
-							<p class="experience__item-text">лет на рынке</p>
-						</li>
-						<li class="experience__item">
-							<p class="experience__item-number">3</p>
-							<p class="experience__item-text">офиса в Дбуне</p>
-						</li>
-						<li class="experience__item">
-							<p class="experience__item-number">3456</p>
-							<p class="experience__item-text">клиентов</p>
-						</li>
-					</ul>
 				</div>
 			</div>
 		</section>
@@ -344,7 +328,7 @@
 				</div>
 			</div>					
 		</section> -->
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container">
 				<div class="about__inner">
 					<div class="about__block">
@@ -353,20 +337,16 @@
 						</h2>
 						<div class="about__info">
 							<div class="about__text">
-								Наша логистическая компания «GreatWall» была основана в 2014 году. С того момента мы растем и динамично развиваемся, ежегодно увеличивая свои показатели, расширяя список клиентов и партнеров. И останавливаться не планируем!<br><br>
-								Бизнес делают люди. Именно поэтому в нашей компании работают профессионалы своего дела. Сотрудники регулярно проходят курсы повышения квалификации и тренинги, посещают семинары и конференции.<br><br>
-								Большое внимание мы уделяем развитию так называемых “soft-skills”: мы умеем “слушать и слышать”, самостоятельно находим ответы на вопросы, тщательно анализируем информацию, прекрасно работаем в команде и хотим, чтобы каждый новый клиент стал, в последствие, хорошим партнером на долгие годы.<br><br>
-								Мы ценим Вас и Ваше время! Одним из наших неоспоримых преимуществ является высокая скорость реагирования на каждую поступающую заявку: именно поэтому клиент получает коммерческое предложение в течение 5-10 минут. Мы умеем работать на высоких скоростях и готовы решать сложные задачи в оптимально сжатые сроки.<br><br>
-								Наша команда помогает людям работать с Китаем, не бояться взаимодействовать с китайскими поставщиками, доверять им производство, делать заказы и привозить товар из Китая в Россию, гарантируя максимально комфортный принцип ценообразования для каждого клиента.<br><br>
-								<span>Наша задача – помочь на каждом этапе и максимально упростить для Вас весь процесс. Это и есть наша работа, наша жизнь!
+								<span>China Shipp</span> – мы являемся финансово-логистической компанией по работе с Китаем. Занимаемся поисками фабрик и производств, выкупом, переводом денежных средств, доставкой и поиском санкционных товаров. Имеем свою большую базу надёжных производителей и поставщиков в разных направлениях: запчасти для сельхозтехники, квадрокоптеры, токарно-фрезерные станки, хоз. товары, бытовая техника, электротехника, электроника.
 								</span>
 							</div>
 							<div class="about__img">
-								<img class="about__image" src="./images/team.jpg" alt="about">
+								<img class="about__image about__image-qua" src="./images/about/quadcopter.png" alt="about">
+								<img class="about__image about__image-tractor" src="./images/about/tractor.png" alt="about">
 							</div>
 						</div>
 					</div>
-					<div class="about__block">
+					<!-- <div class="about__block">
 						<h2 class="about__title">
 							Наши преймущества
 						</h2>
@@ -403,8 +383,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="about__block">
-						<h2 class="about__title">
+					<div class="about__block"> -->
+						<!-- <h2 class="about__title">
 							Наша команда
 						</h2>
 						<ul class="about__team-list">
@@ -481,11 +461,203 @@
 								</div>
 							</li>
 						</ul>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
+		<div class="advantages" id="advantages">
+			<div class="container">
+				<div class="advantages__inner">
+					<h2 class="advantages__title">
+						Наши <span>преимущества</span>
+					</h2>
+					<div class="swiper mySwiper">
+						<ul class="advantages__list swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="advantages__list-inner">
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">1.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">2.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">3.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">4.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">5.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">6.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="advantages__list-inner">
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">7.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">8.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">9.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">10.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">11.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">12.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="advantages__list-inner">
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">13.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">14.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+									<li class="advantages__item">
+										<div class="advantages__item-block">
+											<p class="advantages__item-number">15.</p>
+											<p class="advantages__item-text">
+												Низкие тарифы за логистику 
+											</p>
+										</div>
+										<div class="advantages__item-img">
+											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
+										</div>
+									</li>
+								</div>
+							</div>
+						</ul>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+		</div>
 	</main>
 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
