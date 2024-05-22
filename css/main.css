@@ -123,6 +123,7 @@ body {
 
 .button {
 	font-size: 18px;
+	font-weight: 700;
 	color:#fff;
 
 	padding: 15px 40px;
@@ -384,8 +385,8 @@ body {
 
 .delivery__list {
 	display: flex;
-	justify-content: space-between;
 	list-style: none;
+	gap: 20px;
 
 	margin: 0;
 	padding: 0;
@@ -399,7 +400,7 @@ body {
 
 	border-radius: 6px;
 	padding: 15px 25px;
-	width: 240px;
+	flex: 1 1 calc(20% - 20px);
 }
 
 .delivery__item-img {
@@ -726,6 +727,7 @@ body {
 
 .advantages__item {
 	display: flex;
+	justify-content: space-between;
 	color: #fff;
 
 	padding: 10px;
@@ -744,6 +746,11 @@ body {
 .advantages__item-number {
 	opacity: 0.6;
 	font-size: 24px;
+	margin: 0;
+}
+
+.advantages__item-text {
+	margin: 0;
 }
 
 .mySwiper {

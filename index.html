@@ -82,7 +82,7 @@
 					<p class="header__hero-text">
 						Работаем с юр.лицами: ИП УСН и ООО НДС<br>Поиск производителей / хранение товара на складе / Удобная оплата без лишних комиссий 
 					</p>
-					<button type="button" class="button" id="open-modal-btn">
+					<button type="button" class="button hero__button" id="open-modal-btn">
 						Получить расчет
 					</button>
 
@@ -91,7 +91,7 @@
 					<h3 class="header__hero-form-title">
 						ПОЛУЧИТЕ РАСЧЕТ ЗА 10 МИНУТ
 					</h3>
-					<form class="header__hero-form">
+					<form class="header__hero-form" action="./mail.php" method="POST">
 						<div class="header__hero-form-name">
 							<label class="header__hero-form-label" for="name">
 								<img class="header__hero-form-icon" src="./images/form/person.svg" alt="">
@@ -110,7 +110,7 @@
 							</label>
 							<input type="phone" class="header__hero-form-input" id="phone" placeholder="Введение ваш телефон">
 						</div>
-						<textarea class="header__hero-form-textarea" name="text" id="city" placeholder="Укажите город отправки и доставки. Опишите груз и укажите его вес"></textarea>
+						<textarea class="header__hero-form-textarea" name="text" id="message" placeholder="Укажите город отправки и доставки. Опишите груз и укажите его вес"></textarea>
 						<button type="submit" class="button header__hero-form-button">
 							Получить расчет
 						</button>
@@ -252,7 +252,7 @@
 				<div class="about__inner">
 					<div class="about__block">
 						<h2 class="about__title">
-							О компании
+							О <span>компании</span>
 						</h2>
 						<div class="about__info">
 							<div class="about__text">
@@ -315,7 +315,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">4.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Оптимальный график поставок 
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -326,7 +326,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">5.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Собственный склад в Китае 
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -337,7 +337,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">6.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Любые способы оплаты
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -352,7 +352,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">7.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Бесплатно ищем поставщиков и товары
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -363,7 +363,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">8.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Выгодный курс Юаня для выкупа 
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -374,7 +374,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">9.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Любые проверки товара  по вашему ТЗ 
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -385,7 +385,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">10.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Более 7 видос логистических маршрутов 
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -396,7 +396,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">11.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Работаем как с физ. лицами, так и с юр. лицами 
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -407,7 +407,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">12.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Команда с опытом более 10 лет 
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -422,7 +422,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">13.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Возможность доставки груза сразу на фулфилмент 
 											</p>
 										</div>
 										<div class="advantages__item-img">
@@ -433,18 +433,7 @@
 										<div class="advantages__item-block">
 											<p class="advantages__item-number">14.</p>
 											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
-											</p>
-										</div>
-										<div class="advantages__item-img">
-											<img class="advantages__item-image" src="./images/logic/20946037.png" alt="card">
-										</div>
-									</li>
-									<li class="advantages__item">
-										<div class="advantages__item-block">
-											<p class="advantages__item-number">15.</p>
-											<p class="advantages__item-text">
-												Низкие тарифы за логистику 
+												Расчет юнит-экономики 
 											</p>
 										</div>
 										<div class="advantages__item-img">
