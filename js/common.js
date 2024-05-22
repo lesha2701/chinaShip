@@ -50,9 +50,9 @@ const swiper = new Swiper(".mySwiper", {
   }
 });
 
-document.getElementById("open-modal-btn").addEventListener("click", function() {
-  document.getElementById("my-modal").classList.add("open")
-})
+// document.getElementById("open-modal-btn").addEventListener("click", function() {
+//   document.getElementById("my-modal").classList.add("open")
+// })
 
 document.getElementById("open-modal-btn1").addEventListener("click", function() {
   document.getElementById("my-modal").classList.add("open")

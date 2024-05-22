@@ -132,6 +132,7 @@
 @media (max-width : 576px) {
 	.header__top {
 		flex-direction: column;	
+		padding-bottom: 5px;
 	}
 
 	.header__contact-list {
@@ -142,12 +143,18 @@
 		text-align: center;
 	}
 
+	.header__menu-list {
+		margin-top: 5px;
+	}
+
 	.header__menu-link {
-		font-size: 14px;
+		font-size: 9px;
+		opacity: 0.7;
 	}
 
 	.header__contact-link {
-		font-size: 16px;
+		font-size: 14px;
+		opacity: 1;
 	}
 
 	.delivery__list {
@@ -155,12 +162,15 @@
 	}
 
 	.header__hero-title {
-		font-size: 20px;
+		font-size: 22px;
 		margin-bottom: 10px;
 	}
 
 	.header__hero-text {
-		margin-bottom: 10px;
+		margin-bottom: 20px;
+		font-size: 12px;
+		opacity: 0.7;
+		font-weight: 400;
 	}
 
 	.header__hero-form {
@@ -220,6 +230,10 @@
 
 	.footer__list {
 		flex-direction: column;
+	}
+
+	.modal__text-privacy {
+		font-size: 10px;
 	}
 }
 
